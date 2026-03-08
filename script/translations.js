@@ -11,9 +11,9 @@ export const translations = {
     menu: {
       home: "Главная",
       catalog: "Каталог",
-      instagram: "Inst***am",
+      instagram: "ins***ram",
       youtube: "YouTube",
-      facebook: "Fac***ok",
+      facebook: "fac***ok",
       vk: "VK",
       telegram: "Telegram",
       timeOnTatooine: "Татуин",
@@ -146,7 +146,12 @@ export const translations = {
     },
     contact: {
       email: "Email: raven@custom.com",
-      title: "Да пребудет <br/> с тобой сила"
+      title: "Да пребудет <br/> с тобой сила",
+      instagram: "ins***ram",
+      youtube: "YouTube",
+      facebook: "fac***ok",
+      vk: "VK",
+      telegram: "Telegram"
     }
   },
   en: {
@@ -160,9 +165,9 @@ export const translations = {
     menu: {
       home: "Home",
       catalog: "Catalog",
-      instagram: "Inst***am",
+      instagram: "ins***ram",
       youtube: "YouTube",
-      facebook: "Fac***ok",
+      facebook: "fac***ok",
       vk: "VK",
       telegram: "Telegram",
       timeOnTatooine: "Tatooine",
@@ -295,7 +300,12 @@ export const translations = {
     },
     contact: {
       email: "Email: raven@custom.com",
-      title: "May the Force <br/> be with you"
+      title: "May the Force <br/> be with you",
+      instagram: "ins***ram",
+      youtube: "YouTube",
+      facebook: "fac***ok",
+      vk: "VK",
+      telegram: "Telegram"
     }
   }
 };
