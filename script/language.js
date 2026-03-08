@@ -194,7 +194,7 @@ export function applyTranslations() {
 
   const footerLinks = document.querySelectorAll('.footer-links a');
   if (footerLinks.length > 0) {
-    const footerKeys = ['menu.home', 'menu.catalog', 'menu.contacts', 'menu.instagram', 'menu.youtube', 'menu.facebook', 'menu.vk', 'menu.telegram'];
+    const footerKeys = ['menu.home', 'menu.catalog', 'menu.instagram', 'menu.youtube', 'menu.facebook', 'menu.vk', 'menu.telegram'];
     footerLinks.forEach((link, index) => {
       if (footerKeys[index]) {
         link.textContent = t(footerKeys[index], lang);

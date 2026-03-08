@@ -147,9 +147,9 @@ export const translations = {
     contact: {
       email: "Email: raven@custom.com",
       title: "Да пребудет <br/> с тобой сила",
-      instagram: "ins***ram",
+      instagram: "Ins***ram",
       youtube: "YouTube",
-      facebook: "fac***ok",
+      facebook: "Fac***ok",
       vk: "VK",
       telegram: "Telegram"
     }
@@ -165,9 +165,9 @@ export const translations = {
     menu: {
       home: "Home",
       catalog: "Catalog",
-      instagram: "ins***ram",
+      instagram: "Ins***ram",
       youtube: "YouTube",
-      facebook: "fac***ok",
+      facebook: "Fac***ok",
       vk: "VK",
       telegram: "Telegram",
       timeOnTatooine: "Tatooine",
@@ -301,9 +301,9 @@ export const translations = {
     contact: {
       email: "Email: raven@custom.com",
       title: "May the Force <br/> be with you",
-      instagram: "ins***ram",
+      instagram: "Ins***ram",
       youtube: "YouTube",
-      facebook: "fac***ok",
+      facebook: "Fac***ok",
       vk: "VK",
       telegram: "Telegram"
     }
