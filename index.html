@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raven</title>
+  <link rel="icon" href="/global/site-icon.png" />
+  <link rel="stylesheet" href="/globals.css" />
+  <link rel="stylesheet" href="/css/transition.css" />
+  <link rel="stylesheet" href="/css/menu.css" />
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
+  <link rel="stylesheet" href="/css/music.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+</head>
+
+<body>
+  <!-- Прелоадер -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-overlay"></div>
+    <div class="preloader-content">
+      <div class="preloader-brand">
+        <div class="preloader-logo">
+          <img src="/global/logo.png" alt="Logo" />
+        </div>
+        <h2 class="preloader-title" id="preloader-welcome">Добро пожаловать</h2>
+      </div>
+      <div class="preloader-options">
+        <div class="preloader-option-block">
+          <span class="preloader-option-label" id="preloader-language-label">Язык</span>
+          <div class="preloader-language">
+            <button type="button" id="lang-ru-btn" class="preloader-lang-btn active" aria-pressed="true">RU</button>
+            <button type="button" id="lang-en-btn" class="preloader-lang-btn" aria-pressed="false">EN</button>
+          </div>
+        </div>
+        <div class="preloader-option-block">
+          <span class="preloader-option-label" id="preloader-sound-label">Атмосфера</span>
+          <div class="preloader-buttons">
+            <button type="button" id="enable-music-btn" class="preloader-btn preloader-btn-primary">
+              <span class="preloader-btn-icon" aria-hidden="true">&#9654;</span>
+              <span id="preloader-enable-music-text">Включить атмосферу</span>
+            </button>
+            <button type="button" id="skip-music-btn" class="preloader-btn preloader-btn-secondary">
+              <span id="preloader-skip-music-text">Продолжить без звука</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Аудио элемент для фоновой музыки -->
+  <audio id="background-music" loop>
+    <source src="/audio/music.mp3" type="audio/mpeg" />
+    Ваш браузер не поддерживает аудио элемент.
+  </audio>
+
+  <div class="transition">
+    <div class="transition-overlay overlay"></div>
+    <div class="transition-logo">
+      <img src="/global/logo.png" alt="Logo" />
+    </div>
+  </div>
+  <div class="mask-transition"></div>
+  <div class="mask-bg-overlay"></div>
+
+  <nav class="menu">
+    <div class="menu-header">
+      <a href="#" class="menu-logo"><img src="/global/logo.png" alt="" /></a>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="menu menu-hamburger-icon">
+          <span class="menu-item"></span>
+          <span class="menu-item"></span>
+        </div>
+      </button>
+    </div>
+    <div class="menu-overlay">
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="http://localhost:3000/">Каталог</a></li>
+        </ul>
+      </nav>
+      <div class="menu-footer">
+        <div class="menu-social">
+          <a href="https://www.instagram.com/raven_custom_works?igsh=NTc4MTIwNjQ2YQ=="><span>&#9654;</span>
+            Instagram</a>
+          <a href="https://www.youtube.com/@RavenCustomWorks"><span>&#9654;</span> YouTube</a>
+          <a href="https://www.facebook.com/share/g/qhtJacW2xEpR7SP2/?mibextid=K35XfP"><span>&#9654;</span> Facebook</a>
+          <a href="https://vk.com/ravencustomworks "><span>&#9654;</span> VK</a>
+          <a href="https://t.me/raven_help"><span>&#9654;</span> Telegram</a>
+        </div>
+        <div class="menu-controls">
+          <button class="menu-language-toggle"><span>&#9654;</span> Сменить язык</button>
+          <button class="menu-music-toggle"><span>&#9654;</span> Музыка: выкл</button>
+        </div>
+        <div class="menu-time">23:24:02 Татуин</div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="home-services-top-bar">
+      <div class="container">
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-dark.png" alt="Symbol" />
+          </div>
+        </div>
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-dark.png" alt="Symbol" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-header">
+          <h1 data-animate-type="reveal" data-animate-delay="0.25">
+            Кастомные световые мечи
+          </h1>
+        </div>
+        <div class="hero-footer">
+          <div class="hero-footer-copy">
+            <p class="md" data-animate-type="line-reveal" data-animate-delay="0.25">
+              Коллекция электронных световых мечей с детально проработанным дизайном, световыми эффектами и
+              индивидуальным звуком.
+
+            </p>
+          </div>
+          <div class="hero-footer-tags">
+            <p class="mono" data-animate-type="scramble" data-animate-delay="0.5">
+              <span>&#9654;</span> Время на Татуине 18:15:16
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="card" id="hero-card-1">
+          <div class="hero-card-inner">
+            <div class="card-title">
+              <p class="mono">Название модели</p>
+            </div>
+            <div class="card-title">
+              <span>&#9654;</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="hero-card-2">
+          <div class="hero-card-inner">
+            <div class="card-title">
+              <p class="mono">Название модели</p>
+            </div>
+            <div class="card-title">
+              <span>&#9654;</span>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="hero-card-3">
+          <div class="hero-card-inner">
+            <div class="card-title">
+              <p class="mono">Название модели</p>
+            </div>
+            <div class="card-title">
+              <span>&#9654;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-about">
+    <div class="container">
+      <div class="home-about-col">
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s2-light.png" alt="Symbol" />
+          </div>
+        </div>
+        <div class="home-about-header">
+          <p class="mono" data-animate-type="scramble" data-animate-delay="0.2" data-animate-on-scroll="true">
+            <span>&#9654;</span> почему выбирают нас
+          </p>
+          <h3 data-animate-type="line-reveal" data-animate-delay="0.2" data-animate-on-scroll="true">
+            Наша сила
+          </h3>
+        </div>
+      </div>
+      <div class="home-about-col">
+        <div class="home-about-col-row">
+          <div class="home-about-card">
+            <p class="mono" data-animate-type="scramble" data-animate-delay="0.2" data-animate-on-scroll="true">
+              [ Индивидуальные звуковые <br /> профили ]
+            </p>
+            <h4 data-animate-type="line-reveal" data-animate-delay="0.2" data-animate-on-scroll="true">
+              Звук
+            </h4>
+          </div>
+          <div class="home-about-card">
+            <p class="mono" data-animate-type="scramble" data-animate-delay="0.25" data-animate-on-scroll="true">
+              [ Реалистичные световые <br />эффекты ]
+            </p>
+            <h4 data-animate-type="line-reveal" data-animate-delay="0.25" data-animate-on-scroll="true">
+              Свет
+            </h4>
+          </div>
+        </div>
+        <div class="home-about-col-row">
+          <div class="home-about-card">
+            <p class="mono" data-animate-type="scramble" data-animate-delay="0.3" data-animate-on-scroll="true">
+              [ Кастомизация под <br />конкретную модель ]
+            </p>
+            <h4 data-animate-type="line-reveal" data-animate-delay="0.3" data-animate-on-scroll="true">
+              Кастом
+            </h4>
+          </div>
+          <div class="home-about-card">
+            <p class="mono" data-animate-type="scramble" data-animate-delay="0.35" data-animate-on-scroll="true">
+              [ Ручная сборка и <br />тестирование ]
+            </p>
+            <h4 data-animate-type="line-reveal" data-animate-delay="0.35" data-animate-on-scroll="true">
+              Крафт
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-services">
+    <div class="container">
+      <div class="home-services-header">
+        <p class="md">Оборудован и готов к битвам</p>
+      </div>
+    </div>
+    <div class="home-services-top-bar">
+      <div class="container">
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-dark.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s3-dark.png" alt="Symbol" />
+          </div>
+        </div>
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s3-dark.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s1-dark.png" alt="Symbol" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-services-bottom-bar">
+      <div class="container">
+        <p class="mono" data-animate-type="scramble" data-animate-delay="0.2" data-animate-on-scroll="true">
+          [ Производим мечи с 2020 ]
+        </p>
+        <p class="mono" data-animate-type="scramble" data-animate-delay="0.25" data-animate-on-scroll="true">
+          Более 40 моделей
+        </p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="cards-container">
+        <div class="card" id="card-1">
+          <div class="card-wrapper">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-title">
+                  <p class="mono">Сущность меча</p>
+                  <p class="mono">01</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">01</p>
+                  <p class="mono">Сущность меча</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-title">
+                  <p class="mono">Сущность меча</p>
+                  <p class="mono">01</p>
+                </div>
+                <div class="card-copy">
+                  <p>Кайбер-кристалл</p>
+                  <p>Цвет клинка</p>
+                  <p>Энергетическое ядро</p>
+                  <p>Баланс</p>
+                  <p>Форма боя</p>
+                  <p>Настройка</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">01</p>
+                  <p class="mono">Сущность меча</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card-2">
+          <div class="card-wrapper">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-title">
+                  <p class="mono">Звук и отклик</p>
+                  <p class="mono">02</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">02</p>
+                  <p class="mono">Звук и отклик</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-title">
+                  <p class="mono">Звук и отклик</p>
+                  <p class="mono">02</p>
+                </div>
+                <div class="card-copy">
+                  <p>Активация</p>
+                  <p>Звук взмаха</p>
+                  <p>Реакция на удар</p>
+                  <p>Фоновый гул</p>
+                  <p>Датчики движения</p>
+                  <p>Калибровка</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">02</p>
+                  <p class="mono">Звук и отклик</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card-3">
+          <div class="card-wrapper">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="card-title">
+                  <p class="mono">Технология и сборка</p>
+                  <p class="mono">03</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">03</p>
+                  <p class="mono">Технология и сборка</p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="card-title">
+                  <p class="mono">Технология и сборка</p>
+                  <p class="mono">03</p>
+                </div>
+                <div class="card-copy">
+                  <p>Neopixel-клинок</p>
+                  <p>Плата управления</p>
+                  <p>Система питания</p>
+                  <p>Прошивка</p>
+                  <p>Тестирование</p>
+                  <p>Финальная сборка</p>
+                </div>
+                <div class="card-title">
+                  <p class="mono">03</p>
+                  <p class="mono">Технология и сборка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-spotlight">
+    <div class="home-spotlight-top-bar">
+      <div class="container">
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-light.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s2-light.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s3-light.png" alt="Symbol" />
+          </div>
+        </div>
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s3-light.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s2-light.png" alt="Symbol" />
+          </div>
+          <div class="symbol">
+            <img src="/symbols/s1-light.png" alt="Symbol" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-spotlight-bottom-bar">
+      <div class="container">
+        <p class="mono" data-animate-type="scramble" data-animate-delay="0.25" data-animate-on-scroll="true">
+          [ Наши мечи ]
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="spotlight-intro-header">
+        <h3 data-animate-type="line-reveal" data-animate-delay="0.3" data-animate-on-scroll="true">
+          Каждый меч — это история
+        </h3>
+      </div>
+    </div>
+    <div class="home-spotlight-images">
+      <div class="home-spotlight-images-row">
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/1.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/2.png" alt="" />
+        </div>
+      </div>
+      <div class="home-spotlight-images-row">
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/3.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image"></div>
+      </div>
+      <div class="home-spotlight-images-row">
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/4.png" alt="" />
+        </div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/5.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+      </div>
+      <div class="home-spotlight-images-row">
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/6.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/7.png" alt="" />
+        </div>
+      </div>
+      <div class="home-spotlight-images-row">
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/8.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+        <div class="home-spotlight-image image-holder">
+          <img src="/spotlight-images/9.png" alt="" />
+        </div>
+        <div class="home-spotlight-image"></div>
+      </div>
+    </div>
+    <div class="spotlight-mask-image-container">
+      <div class="spotlight-mask-image">
+        <img src="/spotlight-images/banner.jpg" alt="" />
+      </div>
+      <div class="container">
+        <div class="spotlight-mask-header">
+          <h3>Сначала рождается решение — потом клинок</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="outro">
+    <div class="container">
+      <h3>Сила заканчивается, но Вера остаётся</h3>
+    </div>
+    <div class="outro-strips">
+      <div class="outro-strip os-1">
+        <div class="skill skill-var-1">
+          <p class="mono">Кайбер-кристалл</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Плазменное ядро</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Активация клинка</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Сфокусированная энергия</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Баланс Силы</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Матрица излучателя</p>
+        </div>
+      </div>
+
+      <div class="outro-strip os-2">
+        <div class="skill skill-var-2">
+          <p class="mono">Двухфазный режим</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Точный хват</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Боевая форма</p>
+        </div>
+      </div>
+
+      <div class="outro-strip os-3">
+        <div class="skill skill-var-2">
+          <p class="mono">Конструкция рукояти</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Орден джедаев</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Поток энергии</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Путь обучения</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Дисциплина Силы</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Гармония клинка</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Выверенный баланс</p>
+        </div>
+      </div>
+
+      <div class="outro-strip os-4">
+        <div class="skill skill-var-1">
+          <p class="mono">Защита излучателя</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Импульс энергии</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Полный контроль</p>
+        </div>
+      </div>
+
+      <div class="outro-strip os-5">
+        <div class="skill skill-var-1">
+          <p class="mono">Одинарный клинок</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Двойной меч</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Крестовина</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Тихая активация</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Настройка на Силу</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Собран вручную</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Готов к бою</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Наследие ордена</p>
+        </div>
+      </div>
+
+      <div class="outro-strip os-6">
+        <div class="skill skill-var-3">
+          <p class="mono">Ядро светового меча</p>
+        </div>
+        <div class="skill skill-var-1">
+          <p class="mono">Элегантное оружие</p>
+        </div>
+        <div class="skill skill-var-2">
+          <p class="mono">Создан Силой</p>
+        </div>
+        <div class="skill skill-var-3">
+          <p class="mono">Контроль плазмы</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="home-spotlight-top-bar">
+      <div class="container">
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-light.png" alt="Symbol" />
+          </div>
+        </div>
+        <div class="symbols-container">
+          <div class="symbol">
+            <img src="/symbols/s1-light.png" alt="Symbol" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-header">
+        <div class="contact-callout">
+          <p class="mono" data-animate-type="scramble" data-animate-delay="0.25">
+            <span>&#9654;</span> Email: raven@custom.com
+          </p>
+        </div>
+        <div class="contact-header-title">
+          <h2 data-animate-type="line-reveal" data-animate-delay="0.25">
+            Да пребудет <br /> с тобой сила
+          </h2>
+        </div>
+      </div>
+      <div class="contact-gif">
+        <img src="/contact/contact2.gif" alt="" />
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <p class="mono"><span>&#9654;</span> Сделайте первый шаг на своём пути
+          </p>
+        </div>
+        <div class="footer-col"></div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="/global/logo.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-sub-col">
+            <p class="mono">Навигация</p>
+            <div class="footer-links">
+              <p><a href="/">Главная</a></p>
+              <p><a href="http://localhost:3000/">Каталог</a></p>
+              <p><a href="/contact">Контакты</a></p>
+            </div>
+          </div>
+          <div class="footer-sub-col">
+            <p class="mono">Соц. сети</p>
+            <div class="footer-links">
+              <p><a href="https://t.me/raven_help">Instagram</a></p>
+              <p><a href="https://t.me/raven_help">YouTube</a></p>
+              <p><a href="https://t.me/raven_help">Facebook</a></p>
+              <p><a href="https://t.me/raven_help">VK</a></p>
+              <p><a href="https://t.me/raven_help">Telegram</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="footer-col">
+          <p class="mono">2026</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-sub-col">
+            <p class="mono"></p>
+          </div>
+          <div class="footer-sub-col">
+            <a href="https://t.me/martgarcon">
+              <p class="mono">Сделано Martgarcon STD</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/script/preloader.js"></script>
+  <script type="module" src="/script/language.js"></script>
+  <script type="module" src="/script/lenis-scroll.js"></script>
+  <script type="module" src="/script/transition.js"></script>
+  <script type="module" src="/script/menu.js"></script>
+  <script type="module" src="/script/home.js"></script>
+  <script type="module" src="/script/music.js"></script>
+  <script type="module" src="/script/transition.js"></script>
+  <script type="module" src="/script/contact.js"></script>
+</body>
+
+</html>
