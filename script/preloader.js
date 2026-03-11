@@ -222,6 +222,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menu) {
       menu.classList.add('visible');
     }
+
+    // На первой загрузке с прелоадером скрываем красный transition-оверлей,
+    // чтобы не перекрывал контент (особенно на мобильных)
+    const transitionOverlay = document.querySelector('.transition-overlay');
+    if (transitionOverlay) {
+      try {
+        // Если gsap доступен — используем его для совместимости с остальной анимацией
+        if (typeof gsap !== 'undefined') {
+          gsap.set(transitionOverlay, { scaleY: 0 });
+        } else {
+          transitionOverlay.style.transformOrigin = 'top';
+          transitionOverlay.style.transform = 'scaleY(0)';
+        }
+      } catch (e) {
+        transitionOverlay.style.transformOrigin = 'top';
+        transitionOverlay.style.transform = 'scaleY(0)';
+      }
+    }
     
     // Применяем переводы сразу
     if (typeof window.applyTranslations === 'function') {
