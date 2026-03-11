@@ -45,11 +45,11 @@ export const translations = {
     },
     spotlight: {
       ourSabers: "[ Наши мечи ]",
-      title: "Каждый меч — это история",
+      title: "Каждый световой меч — это история",
       subtitle: "Сначала рождается решение — потом клинок"
     },
     outro: {
-      title: "Сила заканчивается, но Вера остаётся",
+      title: "«Сила течёт во мне, я един с силой.»",
       skills: {
         strip1: [
           "Кайбер-кристалл",
@@ -199,11 +199,11 @@ export const translations = {
     },
     spotlight: {
       ourSabers: "[ Our sabers ]",
-      title: "Every saber is a story",
+      title: "Every lightsaber is a story",
       subtitle: "First a solution is born — then the blade"
     },
     outro: {
-      title: "The Force ends, but Faith remains",
+      title: "“I am one with the Force and the Force is with me.”",
       skills: {
         strip1: [
           "Kyber crystal",
