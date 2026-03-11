@@ -212,6 +212,12 @@
   text-align: center;
   transform: translateY(300%);
   will-change: transform;
+  z-index: 1;
+}
+
+.home-services-header p {
+  margin: 0;
+  line-height: 1.2;
 }
 
 .home-services .cards {
@@ -229,8 +235,10 @@
 .home-services .cards-container {
   position: relative;
   width: 75%;
-  height: 100%;
-  margin-top: 4rem;
+  /* Высота = экран минус отступ сверху и снизу (место для текста «Производим мечи с 2020» и «Более 40 моделей») */
+  height: calc(100vh - 18rem - 8rem);
+  max-height: calc(100% - 18rem - 8rem);
+  margin-top: 18rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -736,8 +744,10 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    display: block;
+    height: auto;
+    max-height: none;
     margin: 0;
+    display: block;
   }
 
   .home-services .card {
