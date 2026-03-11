@@ -2,18 +2,18 @@
 
 :root {
   /* ФОНЫ — глубокая тьма */
-  --base-100: #07080b;     /* основной фон */
-  --base-200: #0d0f14;     /* секции, карточки */
-  --base-300: #ff0000;     /* текст */
+  --base-100: #07080b; /* основной фон */
+  --base-200: #0d0f14; /* секции, карточки */
+  --base-300: #ff0000; /* текст */
 
   /* ВТОРИЧНЫЕ */
   --base-secondary-dark: #ffffff;
   --base-secondary-fade: rgba(226, 226, 226, 0.06);
 
   /* АКЦЕНТЫ СИЛЫ */
-  --accent-1: #ffffff;    /* холодная Сила */
-  --accent-2: #ffffff;    /* гнев, падение */
-  --accent-3: #ffffff;    /* угасающий свет */
+  --accent-1: #ffffff; /* холодная Сила */
+  --accent-2: #ffffff; /* гнев, падение */
+  --accent-3: #ffffff; /* угасающий свет */
 }
 
 * {
@@ -23,7 +23,12 @@
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   background-color: var(--base-100);
   color: var(--base-300);
 }
@@ -32,12 +37,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: radial-gradient(
-    circle at 50% 25%,
-    rgba(255, 0, 0, 0.35),
-    rgba(156, 2, 2, 0.15) 35%,
-    transparent 60%
-  );
+  background: radial-gradient(circle at 50% 25%, rgba(255, 0, 0, 0.35), rgba(156, 2, 2, 0.15) 35%, transparent 60%);
   pointer-events: none;
   z-index: -1;
 }

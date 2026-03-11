@@ -3,10 +3,10 @@ import { t, getCurrentLanguage, setLanguage, translations } from "./translations
 // Применение переводов к элементам страницы
 export function applyTranslations() {
   const lang = getCurrentLanguage();
-  
+
   // Обновляем ссылки на каталог с параметром языка
   updateCatalogLinks(lang);
-  
+
   // Меню
   const menuLinks = document.querySelectorAll('.menu-nav a');
   if (menuLinks.length > 0) {
@@ -82,7 +82,7 @@ export function applyTranslations() {
       { key: 'about.customDesc', title: 'about.custom' },
       { key: 'about.craftDesc', title: 'about.craft' }
     ];
-    
+
     aboutCards.forEach((card, index) => {
       if (cardData[index]) {
         const desc = card.querySelector('p.mono');
@@ -109,7 +109,7 @@ export function applyTranslations() {
   const spotlightTags = document.querySelectorAll('.home-spotlight-bottom-bar p.mono');
   // Проверяем, что это не contact страница (на главной странице есть секция .contact, но она не является отдельной страницей)
   const isContactPage = window.location.pathname === '/contact' || window.location.pathname.endsWith('/contact.html');
-  
+
   if (!isContactPage && spotlightTags.length >= 1) {
     // На главной странице переводим "[ Наши мечи ]"
     spotlightTags[0].textContent = t('spotlight.ourSabers', lang);
@@ -137,7 +137,7 @@ export function applyTranslations() {
     const skills = strip.querySelectorAll('.skill p.mono');
     const stripKey = `outro.skills.strip${stripIndex + 1}`;
     const translations = t(stripKey, lang);
-    
+
     if (Array.isArray(translations)) {
       skills.forEach((skill, skillIndex) => {
         if (translations[skillIndex]) {
@@ -307,7 +307,7 @@ export function applyTranslations() {
 export function switchLanguage(lang) {
   setLanguage(lang);
   applyTranslations();
-  
+
   // Обновляем текст кнопки переключения языка в меню
   const menuLanguageToggle = document.querySelector('.menu-language-toggle');
   if (menuLanguageToggle) {
@@ -355,20 +355,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Экспортируем функцию для использования в прелоадере
   window.applyTranslations = applyTranslations;
   window.switchLanguage = switchLanguage;
-  
+
   // Кнопка переключения языка в меню
   const menuLanguageToggle = document.querySelector('.menu-language-toggle');
   if (menuLanguageToggle) {
     const currentLang = getCurrentLanguage();
     menuLanguageToggle.innerHTML = `<span>&#9654;</span> ${t('menu.switchLanguage', currentLang)}`;
-    
+
     menuLanguageToggle.addEventListener('click', () => {
       const currentLang = getCurrentLanguage();
       const newLang = currentLang === 'ru' ? 'en' : 'ru';
       switchLanguage(newLang);
     });
   }
-  
+
   // Применяем переводы если прелоадер уже скрыт
   const preloader = document.getElementById('preloader');
   if (!preloader || preloader.classList.contains('hidden')) {
