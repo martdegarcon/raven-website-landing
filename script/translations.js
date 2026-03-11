@@ -146,7 +146,7 @@ export const translations = {
     },
     contact: {
       email: "Email: raven@custom.com",
-      title: "Да пребудет <br/> с тобой сила",
+      title: "«Сила течёт во мне, я един с силой.»",
       instagram: "Ins***ram",
       youtube: "YouTube",
       facebook: "Fac***ok",
@@ -300,7 +300,7 @@ export const translations = {
     },
     contact: {
       email: "Email: raven@custom.com",
-      title: "May the Force <br/> be with you",
+      title: "“I am one with the Force and the Force is with me.”",
       instagram: "Ins***ram",
       youtube: "YouTube",
       facebook: "Fac***ok",

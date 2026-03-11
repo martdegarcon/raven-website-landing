@@ -74,6 +74,11 @@
     margin: 0 auto;
   }
 
+  .contact .contact-header-title h2 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
   .contact .home-spotlight-bottom-bar p:nth-child(2),
   .contact .home-spotlight-bottom-bar p:nth-child(3) {
     display: none;
