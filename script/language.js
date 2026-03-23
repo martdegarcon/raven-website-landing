@@ -94,10 +94,7 @@ export function applyTranslations() {
   }
 
   // Services секция
-  const servicesHeader = document.querySelector('.home-services-header p');
-  if (servicesHeader) {
-    servicesHeader.textContent = t('services.ready', lang);
-  }
+  // Фраза для заголовка секции services сейчас хранится/задается в верстке (или не используется).
 
   const servicesTags = document.querySelectorAll('.home-services-bottom-bar p.mono');
   if (servicesTags.length >= 2) {

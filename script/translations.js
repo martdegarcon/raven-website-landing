@@ -39,7 +39,6 @@ export const translations = {
       craftDesc: "[ Ручная сборка и <br/>тестирование ]"
     },
     services: {
-      ready: "Оборудован и готов к битвам",
       since: "[ Производим мечи с 2020 ]",
       moreModels: "Более 40 моделей"
     },
@@ -193,7 +192,6 @@ export const translations = {
       craftDesc: "[ Hand assembly and <br/>testing ]"
     },
     services: {
-      ready: "Equipped and ready for battles",
       since: "[ Making sabers since 2020 ]",
       moreModels: "More than 40 models"
     },
