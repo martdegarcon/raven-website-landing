@@ -333,19 +333,26 @@ export function switchLanguage(lang) {
 
 // Функция для обновления ссылок на каталог с параметром языка
 function updateCatalogLinks(lang) {
-  const catalogLinks = document.querySelectorAll('a[href*="localhost:3000"], a[href*="catalog"]');
-  catalogLinks.forEach(link => {
+  // Обновляем ссылки на каталог под выбранный язык.
+  // Раньше обновление работало только для `localhost:3000`, поэтому внешние ссылки
+  // `https://catalog.raven-custom.com` оставались без `?lang=...`.
+  const catalogLinks = document.querySelectorAll(
+    'a[href*="catalog.raven-custom.com"], a[href*="localhost:3000"]'
+  );
+
+  catalogLinks.forEach((link) => {
     const href = link.getAttribute('href');
-    if (href && href.includes('localhost:3000')) {
-      try {
-        const url = new URL(href);
-        url.searchParams.set('lang', lang);
-        link.setAttribute('href', url.toString());
-      } catch (e) {
-        // Если не удалось распарсить URL, добавляем параметр вручную
-        const separator = href.includes('?') ? '&' : '?';
-        link.setAttribute('href', `${href}${separator}lang=${lang}`);
-      }
+    if (!href) return;
+
+    try {
+      // Для внешних ссылок парсинг с base не обязателен, но так надежнее.
+      const url = new URL(href, window.location.origin);
+      url.searchParams.set('lang', lang);
+      link.setAttribute('href', url.toString());
+    } catch (e) {
+      // Если не удалось распарсить URL, добавляем параметр вручную.
+      const separator = href.includes('?') ? '&' : '?';
+      link.setAttribute('href', `${href}${separator}lang=${lang}`);
     }
   });
 }
