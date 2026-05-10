@@ -10,7 +10,7 @@ export function applyTranslations() {
   // Меню
   const menuLinks = document.querySelectorAll('.menu-nav a');
   if (menuLinks.length > 0) {
-    const menuKeys = ['menu.home', 'menu.catalog', 'menu.contacts'];
+    const menuKeys = ['menu.home', 'menu.catalog', 'menu.documents'];
     menuLinks.forEach((link, index) => {
       if (menuKeys[index]) {
         link.textContent = t(menuKeys[index], lang);
@@ -191,12 +191,23 @@ export function applyTranslations() {
 
   const footerLinks = document.querySelectorAll('.footer-links a');
   if (footerLinks.length > 0) {
-    const footerKeys = ['menu.home', 'menu.catalog', 'menu.instagram', 'menu.youtube', 'menu.facebook', 'menu.vk', 'menu.telegram'];
+    const footerKeys = ['menu.home', 'menu.catalog', 'menu.documents', 'menu.instagram', 'menu.youtube', 'menu.facebook', 'menu.vk', 'menu.telegram'];
     footerLinks.forEach((link, index) => {
       if (footerKeys[index]) {
         link.textContent = t(footerKeys[index], lang);
       }
     });
+  }
+
+  // Documents page
+  const documentsTitle = document.querySelector('.documents-page-title');
+  if (documentsTitle) {
+    documentsTitle.textContent = t('documents.title', lang);
+  }
+
+  const documentsContent = document.getElementById('documents-content');
+  if (documentsContent) {
+    documentsContent.innerHTML = t('documents.content', lang);
   }
 
   const footerSocial = document.querySelectorAll('.footer-copy p');
@@ -235,9 +246,7 @@ export function applyTranslations() {
     const titles1 = card1.querySelectorAll('.card-title p.mono');
     titles1.forEach(title => {
       if (title.textContent && !title.textContent.match(/^\d+$/)) {
-        if (title.textContent.includes('Сущность') || title.textContent.includes('Sword essence')) {
-          title.textContent = t('cards.card1.title', lang);
-        }
+        title.textContent = t('cards.card1.title', lang);
       }
     });
 
@@ -258,9 +267,7 @@ export function applyTranslations() {
     const titles2 = card2.querySelectorAll('.card-title p.mono');
     titles2.forEach(title => {
       if (title.textContent && !title.textContent.match(/^\d+$/)) {
-        if (title.textContent.includes('Звук') || title.textContent.includes('Sound')) {
-          title.textContent = t('cards.card2.title', lang);
-        }
+        title.textContent = t('cards.card2.title', lang);
       }
     });
 
@@ -281,9 +288,7 @@ export function applyTranslations() {
     const titles3 = card3.querySelectorAll('.card-title p.mono');
     titles3.forEach(title => {
       if (title.textContent && !title.textContent.match(/^\d+$/)) {
-        if (title.textContent.includes('Технология') || title.textContent.includes('Technology')) {
-          title.textContent = t('cards.card3.title', lang);
-        }
+        title.textContent = t('cards.card3.title', lang);
       }
     });
 
@@ -376,10 +381,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Применяем переводы если прелоадер уже скрыт
   const preloader = document.getElementById('preloader');
   if (!preloader || preloader.classList.contains('hidden')) {
-    // Показываем кнопку языка если прелоадер скрыт
-    if (langToggle) {
-      langToggle.style.display = 'flex';
-    }
     applyTranslations();
   }
 });

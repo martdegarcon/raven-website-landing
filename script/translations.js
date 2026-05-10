@@ -11,6 +11,7 @@ export const translations = {
     menu: {
       home: "Главная",
       catalog: "Каталог",
+      documents: "Документы",
       instagram: "ins***ram",
       youtube: "YouTube",
       facebook: "fac***ok",
@@ -23,20 +24,20 @@ export const translations = {
     },
     hero: {
       title: "Кастомные световые мечи",
-      description: "Коллекция электронных световых мечей с детально проработанным дизайном, световыми эффектами и индивидуальным звуком.",
+      description: "Реализованы с использованием уникальных инженерных подходов, с аутентичностью экранного образа, применением натуральных кристаллов и персональной настройкой под владельца.",
       timeOnTatooine: "Время на Татуине"
     },
     about: {
       whyChooseUs: "почему выбирают нас",
       ourStrength: "Наша сила",
-      sound: "Звук",
-      soundDesc: "[ Индивидуальные звуковые <br/> профили ]",
-      light: "Свет",
-      lightDesc: "[ Реалистичные световые <br/>эффекты ]",
-      custom: "Кастом",
-      customDesc: "[ Кастомизация под <br/>конкретную модель ]",
-      craft: "Крафт",
-      craftDesc: "[ Ручная сборка и <br/>тестирование ]"
+      sound: "ЗВУК",
+      soundDesc: "Профили собственной разработки для Proffieboard, CFX, Verso, Xenopixel и GHv4. Первая в мире многоязычная система saber font с поддержкой 8 языков.",
+      light: "СВЕТ",
+      lightDesc: "Реалистичные световые эффекты с синхронизацией со звуком и движением. Поддержка blade detect и собственные цветовые конфигурации клинка.",
+      custom: "КОНСТРУКЦИЯ",
+      customDesc: "Индивидуальная разработка шасси под каждый проект. Уникальные инженерные решения, включая бесполярную систему аккумулятора и передачу звука по Bluetooth.",
+      craft: "СБОРКА",
+      craftDesc: "Ручная сборка под каждый проект с тщательной проверкой всех систем. Конфигурации для саберфайтинга и коллекционных решений с использованием натуральных кристаллов."
     },
     services: {
       since: "[ Производим мечи с 2020 ]",
@@ -51,47 +52,41 @@ export const translations = {
       title: "«Сила течёт во мне, я един с силой.»",
       skills: {
         strip1: [
-          "Кайбер-кристалл",
-          "Плазменное ядро",
-          "Активация клинка",
-          "Сфокусированная энергия",
-          "Баланс Силы",
-          "Матрица излучателя"
+          "Neopixel-клинок",
+          "Proffieboard",
+          "CFX",
+          "Verso",
+          "Xenopixel"
         ],
         strip2: [
-          "Двухфазный режим",
-          "Точный хват",
-          "Боевая форма"
+          "GHv4",
+          "Blade detect",
+          "Саберфайтинг",
+          "Натуральные кристаллы"
         ],
         strip3: [
-          "Конструкция рукояти",
-          "Орден джедаев",
-          "Поток энергии",
-          "Путь обучения",
-          "Дисциплина Силы",
-          "Гармония клинка",
-          "Выверенный баланс"
+          "Кристалл аметиста",
+          "Кристалл аквамарина",
+          "Камера кристалла",
+          "SLS-печать"
         ],
         strip4: [
-          "Защита излучателя",
-          "Импульс энергии",
-          "Полный контроль"
+          "Шасси под проект",
+          "Ручная сборка",
+          "Балансировка",
+          "Звуковые профили"
         ],
         strip5: [
-          "Одинарный клинок",
-          "Двойной меч",
-          "Крестовина",
-          "Тихая активация",
-          "Настройка на Силу",
-          "Собран вручную",
-          "Готов к бою",
-          "Наследие ордена"
+          "8 языков",
+          "Bluetooth звук",
+          "Магнитное управление",
+          "Датчики движения"
         ],
         strip6: [
-          "Ядро светового меча",
-          "Элегантное оружие",
-          "Создан Силой",
-          "Контроль плазмы"
+          "Калибровка",
+          "Световые эффекты",
+          "Прошивка ProffieOS",
+          "Тестирование системы"
         ]
       }
     },
@@ -110,47 +105,82 @@ export const translations = {
     },
     cards: {
       card1: {
-        title: "Сущность меча",
+        title: "ЭФЕС",
         items: [
-          "Кайбер-кристалл",
-          "Цвет клинка",
-          "Энергетическое ядро",
-          "Баланс",
-          "Форма боя",
-          "Настройка"
+          "Проверенные конструкции рукояти",
+          "Точность экранной реплики",
+          "Кастомный декор и состаривание",
+          "Конструкции, пригодные для саберфайтинга",
+          "Баланс и ощущение в руке",
+          "Индивидуальная подгонка под владельца"
         ]
       },
       card2: {
-        title: "Звук и отклик",
+        title: "ШАССИ",
         items: [
-          "Активация",
-          "Звук взмаха",
-          "Реакция на удар",
-          "Фоновый гул",
-          "Датчики движения",
-          "Калибровка"
+          "Индивидуальное шасси под каждый меч",
+          "Лазерная 3D-печать высокой точности",
+          "Конструкция под конкретные компоненты",
+          "Чистая и продуманная компоновка",
+          "Оптимизация под звук и питание",
+          "Ручная сборка и подгонка"
         ]
       },
       card3: {
-        title: "Технология и сборка",
+        title: "СИСТЕМА",
         items: [
-          "Neopixel-клинок",
-          "Плата управления",
-          "Система питания",
-          "Прошивка",
-          "Тестирование",
-          "Финальная сборка"
+          "Звуковые профили с поддержкой 8 языков",
+          "Уникальные стили и эффекты клинка",
+          "Ручная настройка ProffieOS под владельца",
+          "Передача звука по Bluetooth",
+          "Поддержка blade detect",
+          "Управление через магнитное кольцо"
         ]
       }
     },
     contact: {
-      email: "Email: raven@custom.com",
+      email: 'Email: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a>',
       title: "«Сила течёт во мне, я един с силой.»",
       instagram: "Ins***ram",
       youtube: "YouTube",
       facebook: "Fac***ok",
       vk: "VK",
       telegram: "Telegram"
+    },
+    documents: {
+      title: "Политика обработки персональных данных",
+      content: `
+        <h4>1. Общие положения</h4>
+        <p>Настоящая Политика обработки персональных данных определяет порядок обработки персональных данных пользователей сайта Raven Custom Works.</p>
+        <p>Оператором персональных данных является физическое лицо / самозанятый, осуществляющий деятельность под наименованием Raven Custom Works.</p>
+        <p>Используя сайт, пользователь соглашается с условиями настоящей Политики.</p>
+        <h4>2. Какие данные могут собираться</h4>
+        <p>Оператор может обрабатывать следующие данные, добровольно предоставляемые пользователем через формы сайта:</p>
+        <ul>
+          <li>адрес электронной почты;</li>
+          <li>имя или никнейм;</li>
+          <li>номер телефона или контакт в мессенджере;</li>
+          <li>иные данные, которые пользователь указывает самостоятельно в сообщении.</li>
+        </ul>
+        <h4>3. Цели обработки персональных данных</h4>
+        <p>Персональные данные используются исключительно для:</p>
+        <ul>
+          <li>обратной связи с пользователем;</li>
+          <li>обработки заявок;</li>
+          <li>обсуждения заказов и услуг;</li>
+          <li>предоставления информации по запросу пользователя.</li>
+        </ul>
+        <h4>4. Передача данных третьим лицам</h4>
+        <p>Персональные данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством Российской Федерации.</p>
+        <h4>5. Защита персональных данных</h4>
+        <p>Оператор принимает разумные меры для защиты персональных данных пользователей от неправомерного доступа и распространения.</p>
+        <h4>6. Отзыв согласия</h4>
+        <p>Пользователь может в любой момент запросить удаление своих персональных данных, направив обращение на электронную почту: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a></p>
+        <h4>7. Контактная информация</h4>
+        <p>По вопросам обработки персональных данных: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a></p>
+        <h4>8. Заключительные положения</h4>
+        <p>Настоящая Политика может быть изменена без предварительного уведомления пользователей. Актуальная версия всегда размещается на сайте Raven Custom Works.</p>
+      `
     }
   },
   en: {
@@ -164,6 +194,7 @@ export const translations = {
     menu: {
       home: "Home",
       catalog: "Catalog",
+      documents: "Documents",
       instagram: "Ins***ram",
       youtube: "YouTube",
       facebook: "Fac***ok",
@@ -176,20 +207,20 @@ export const translations = {
     },
     hero: {
       title: "Custom lightsabers",
-      description: "Collection of electronic lightsabers with detailed design, light effects and individual sound.",
+      description: "Engineered with unique design solutions, screen-accurate authenticity, natural crystals, and personalized configuration for the owner.",
       timeOnTatooine: "Time on Tatooine"
     },
     about: {
       whyChooseUs: "why choose us",
       ourStrength: "Our strength",
-      sound: "Sound",
-      soundDesc: "[ Individual sound <br/> profiles ]",
-      light: "Light",
-      lightDesc: "[ Realistic light <br/>effects ]",
-      custom: "Custom",
-      customDesc: "[ Customization for <br/>specific model ]",
-      craft: "Craft",
-      craftDesc: "[ Hand assembly and <br/>testing ]"
+      sound: "SOUND",
+      soundDesc: "Custom-developed sound profiles for Proffieboard, CFX, Verso, Xenopixel, and GHv4. The world's first multilingual saber font system with support for 8 languages.",
+      light: "LIGHT",
+      lightDesc: "Realistic blade effects synchronized with sound and motion. Support for blade detect and custom blade color configurations.",
+      custom: "CONSTRUCTION",
+      customDesc: "Individually designed chassis for each project. Unique engineering solutions, including a bipolar battery system and Bluetooth audio transmission.",
+      craft: "ASSEMBLY",
+      craftDesc: "Hand-assembled for each project with full system testing. Configurations for both saber combat and collector-grade builds using natural crystals."
     },
     services: {
       since: "[ Making sabers since 2020 ]",
@@ -204,47 +235,41 @@ export const translations = {
       title: "“I am one with the Force and the Force is with me.”",
       skills: {
         strip1: [
-          "Kyber crystal",
-          "Plasma core",
-          "Blade activation",
-          "Focused energy",
-          "Balance of the Force",
-          "Emitter matrix"
+          "Neopixel blade",
+          "Proffieboard",
+          "CFX",
+          "Verso",
+          "Xenopixel"
         ],
         strip2: [
-          "Two-phase mode",
-          "Precise grip",
-          "Combat form"
+          "GHv4",
+          "Blade detect",
+          "Saber combat",
+          "Natural crystals"
         ],
         strip3: [
-          "Hilt construction",
-          "Jedi Order",
-          "Energy flow",
-          "Path of learning",
-          "Discipline of the Force",
-          "Blade harmony",
-          "Precise balance"
+          "Amethyst crystal",
+          "Aquamarine crystal",
+          "Crystal chamber",
+          "SLS printing"
         ],
         strip4: [
-          "Emitter protection",
-          "Energy pulse",
-          "Full control"
+          "Custom chassis",
+          "Hand assembly",
+          "Balance tuning",
+          "Sound profiles"
         ],
         strip5: [
-          "Single blade",
-          "Double sword",
-          "Crossguard",
-          "Silent activation",
-          "Tuning to the Force",
-          "Hand assembled",
-          "Ready for battle",
-          "Legacy of the Order"
+          "8 languages",
+          "Bluetooth audio",
+          "Magnetic control",
+          "Motion sensors"
         ],
         strip6: [
-          "Lightsaber core",
-          "Elegant weapon",
-          "Created by the Force",
-          "Plasma control"
+          "Calibration",
+          "Blade effects",
+          "ProffieOS firmware",
+          "System testing"
         ]
       }
     },
@@ -263,47 +288,82 @@ export const translations = {
     },
     cards: {
       card1: {
-        title: "Sword essence",
+        title: "HILT",
         items: [
-          "Kyber crystal",
-          "Blade color",
-          "Energy core",
-          "Balance",
-          "Combat form",
-          "Configuration"
+          "Proven hilt designs",
+          "Screen-accurate replicas",
+          "Custom weathering and detailing",
+          "Combat-ready constructions",
+          "Balance and in-hand feel",
+          "Individual fitting for the owner"
         ]
       },
       card2: {
-        title: "Sound and response",
+        title: "CHASSIS",
         items: [
-          "Activation",
-          "Swing sound",
-          "Impact reaction",
-          "Background hum",
-          "Motion sensors",
-          "Calibration"
+          "Custom chassis for each saber",
+          "High-precision laser 3D printing",
+          "Designed for specific components",
+          "Clean and optimized internal layout",
+          "Optimized for sound and power",
+          "Hand assembly and fitting"
         ]
       },
       card3: {
-        title: "Technology and assembly",
+        title: "SYSTEM",
         items: [
-          "Neopixel blade",
-          "Control board",
-          "Power system",
-          "Firmware",
-          "Testing",
-          "Final assembly"
+          "Sound profiles with support for 8 languages",
+          "Unique blade styles and effects",
+          "Manual ProffieOS configuration per owner",
+          "Bluetooth audio transmission",
+          "Blade detect support",
+          "Magnetic ring activation"
         ]
       }
     },
     contact: {
-      email: "Email: raven@custom.com",
+      email: 'Email: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a>',
       title: "“I am one with the Force and the Force is with me.”",
       instagram: "Ins***ram",
       youtube: "YouTube",
       facebook: "Fac***ok",
       vk: "VK",
       telegram: "Telegram"
+    },
+    documents: {
+      title: "Personal Data Processing Policy",
+      content: `
+        <h4>1. General Provisions</h4>
+        <p>This Personal Data Processing Policy defines how personal data of Raven Custom Works website users is processed.</p>
+        <p>The personal data operator is an individual / self-employed person operating under the Raven Custom Works name.</p>
+        <p>By using the website, the user agrees to the terms of this Policy.</p>
+        <h4>2. What Data May Be Collected</h4>
+        <p>The operator may process the following data voluntarily provided by the user through website forms:</p>
+        <ul>
+          <li>email address;</li>
+          <li>name or nickname;</li>
+          <li>phone number or messenger contact;</li>
+          <li>other information provided by the user in a message.</li>
+        </ul>
+        <h4>3. Purposes of Personal Data Processing</h4>
+        <p>Personal data is used exclusively for:</p>
+        <ul>
+          <li>communication with the user;</li>
+          <li>processing requests;</li>
+          <li>discussing orders and services;</li>
+          <li>providing information at the user’s request.</li>
+        </ul>
+        <h4>4. Transfer of Data to Third Parties</h4>
+        <p>Personal data is not transferred to third parties except as required by the legislation of the Russian Federation.</p>
+        <h4>5. Personal Data Protection</h4>
+        <p>The operator takes reasonable measures to protect personal data from unauthorized access and distribution.</p>
+        <h4>6. Withdrawal of Consent</h4>
+        <p>The user may request deletion of personal data at any time by contacting: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a></p>
+        <h4>7. Contact Information</h4>
+        <p>For questions regarding personal data processing: <a href="mailto:info@raven-custom.com">info@raven-custom.com</a></p>
+        <h4>8. Final Provisions</h4>
+        <p>This Policy may be updated without prior notice. The current version is always available on the Raven Custom Works website.</p>
+      `
     }
   }
 };

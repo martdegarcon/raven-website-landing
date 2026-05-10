@@ -95,6 +95,23 @@
   font-size: 0.8rem;
 }
 
+.hero .hero-cards .hero-model-image-wrap {
+  flex: 1;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.hero .hero-cards .hero-model-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
 .hero .hero-cards .card#hero-card-1 {
   z-index: 2;
 }
@@ -176,6 +193,13 @@
 
 .home-about .home-about-card p.mono {
   color: var(--base-secondary-dark);
+}
+
+.home-about .home-about-card h4 {
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .home-services {
@@ -321,6 +345,22 @@
   align-items: center;
 }
 
+.home-services .service-card-image-wrap {
+  flex: 1;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.home-services .service-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 .home-services #card-1 .flip-card-front {
   background-color: var(--accent-1);
 }
@@ -356,7 +396,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  padding: 0.35rem 0.5rem;
+  text-align: center;
+  line-height: 1.2;
+  font-size: clamp(0.72rem, 0.95vw, 0.9rem);
+  overflow-wrap: anywhere;
+  word-break: break-word;
   background-color: var(--base-200);
   border-radius: 8px;
 }
