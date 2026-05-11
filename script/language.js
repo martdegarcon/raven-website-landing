@@ -365,6 +365,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.applyTranslations = applyTranslations;
   window.switchLanguage = switchLanguage;
 
+  // Гарантируем корректный lang-параметр в ссылках каталога сразу при загрузке.
+  updateCatalogLinks(getCurrentLanguage());
+
   // Кнопка переключения языка в меню
   const menuLanguageToggle = document.querySelector('.menu-language-toggle');
   if (menuLanguageToggle) {
