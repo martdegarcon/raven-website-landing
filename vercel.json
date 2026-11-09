@@ -3,6 +3,26 @@
   "outputDirectory": "dist",
   "routes": [
     {
+      "src": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "raven-custom.com"
+        }
+      ],
+      "dest": "/portal/index.html"
+    },
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.raven-custom.com"
+        }
+      ],
+      "dest": "/portal/index.html"
+    },
+    {
       "src": "/(.*)",
       "has": [
         {
