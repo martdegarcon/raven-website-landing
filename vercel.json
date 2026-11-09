@@ -1,7 +1,50 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/contact", "destination": "/" }
+  "routes": [
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "aegis.raven-custom.com"
+        }
+      ],
+      "dest": "/aegis/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "studio.raven-custom.com"
+        }
+      ],
+      "dest": "/studio/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "cosplay.raven-custom.com"
+        }
+      ],
+      "dest": "/cosplay/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai.raven-custom.com"
+        }
+      ],
+      "dest": "/ai/index.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/"
+    }
   ]
 }
