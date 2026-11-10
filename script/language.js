@@ -339,7 +339,7 @@ function updateCatalogLinks(lang) {
   // Раньше обновление работало только для `localhost:3000`, поэтому внешние ссылки
   // `https://catalog.raven-custom.com` оставались без `?lang=...`.
   const catalogLinks = document.querySelectorAll(
-    'a[href*="catalog.raven-custom.com"], a[href*="localhost:3000"]'
+    'a[href*="catalog.raven-custom-saber.com"], a[href*="catalog.raven-custom.com"], a[href*="localhost:3000"]'
   );
 
   catalogLinks.forEach((link) => {
