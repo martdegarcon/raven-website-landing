@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /portal/
+Disallow: /aegis/
+Disallow: /studio/
+Disallow: /cosplay/
+Disallow: /ai/
+
+User-agent: Yandex
+Allow: /
+Disallow: /portal/
+Disallow: /aegis/
+Disallow: /studio/
+Disallow: /cosplay/
+Disallow: /ai/
+Clean-param: lang /
+
+Sitemap: https://raven-custom-saber.com/sitemap.xml

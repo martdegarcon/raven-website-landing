@@ -3,6 +3,46 @@
   "outputDirectory": "dist",
   "routes": [
     {
+      "src": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "raven-custom-saber.com"
+        }
+      ],
+      "dest": "/robots-saber.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "raven-custom-saber.com"
+        }
+      ],
+      "dest": "/sitemap-saber.xml"
+    },
+    {
+      "src": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.raven-custom-saber.com"
+        }
+      ],
+      "dest": "/robots-saber.txt"
+    },
+    {
+      "src": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.raven-custom-saber.com"
+        }
+      ],
+      "dest": "/sitemap-saber.xml"
+    },
+    {
       "src": "/",
       "has": [
         {
