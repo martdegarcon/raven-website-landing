@@ -92,6 +92,11 @@
   animation-delay: 0.5s;
 }
 
+.hero .hero-cards .card .hero-card-inner {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 .hero .hero-cards .card .card-title {
   width: 100%;
   display: flex;
@@ -137,15 +142,15 @@
 }
 
 .hero .hero-cards .card#hero-card-1 .hero-card-inner {
-  background-color: var(--accent-1);
+  background-color: #1a1c23;
 }
 
 .hero .hero-cards .card#hero-card-2 .hero-card-inner {
-  background-color: var(--accent-2);
+  background-color: #1a1c23;
 }
 
 .hero .hero-cards .card#hero-card-3 .hero-card-inner {
-  background-color: var(--accent-3);
+  background-color: #1a1c23;
 }
 
 .home-about {
